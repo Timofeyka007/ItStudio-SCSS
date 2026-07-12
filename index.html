@@ -4,349 +4,420 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT Studio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
- <header class="header">
-        <div class="container header__container">
-            <nav class="header__nav">
-                <ul class="header__menu">
-                    <li><a href="#" class="header__link">Головна</a></li>
-                    <li><a href="#" class="header__link">Наші проекти</a></li>
-                    <li><a href="#" class="header__link">Послуги</a></li>
-                    <li><a href="#" class="header__link">Новини</a></li>
-                    <li><a href="#" class="header__link">Контакти</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="#" class="header__link">Головна</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#projects" class="header__link">Наші проекти</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#" class="header__link">Послуги</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#" class="header__link">Новини</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#contacts" class="header__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
- 
+
     <main>
-            <section class="hero">
-        <div class="container hero__content">
-            <p class="hero__subtitle">Передова IT студія</p>
-            <h1 class="hero__title">Ми створюємо легкі рішення важких задач і проблем</h1>
-            <a href="#" class="hero__button">Наші проекти</a>
-        </div>
-    </section>
-
-    <section class="services">
+      <section class="hero">
         <div class="container">
-            <h2 class="services__title">Ми створюємо мобільні додатки для великих корпорацій</h2>
-            <p class="services__description">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.</p>
-            
-            <div class="services__grid">
-                <div class="service-card">
-                    <div class="service-card__icon-wrapper">
-                        <svg class="service-card__icon" viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                        </svg>
-                    </div>
-                    <div class="service-card__content">
-                        <h3 class="service-card__title">Створення сайтів</h3>
-                        <p class="service-card__text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні.</p>
-                    </div>
-                </div>
+          <p class="hero__subtitle">Передова IT студія</p>
 
-                >
-                <div class="service-card">
-                    <div class="service-card__icon-wrapper">
-                        <svg class="service-card__icon" viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                        </svg>
-                    </div>
-                    <div class="service-card__content">
-                        <h3 class="service-card__title">Створення сайтів</h3>
-                        <p class="service-card__text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні.</p>
-                    </div>
-                </div>
+          <h1 class="hero__title">
+            Ми створюємо легкі рішення важких задач і проблем
+          </h1>
 
-                
-                <div class="service-card">
-                    <div class="service-card__icon-wrapper">
-                        <svg class="service-card__icon" viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                        </svg>
-                    </div>
-                    <div class="service-card__content">
-                        <h3 class="service-card__title">Створення сайтів</h3>
-                        <p class="service-card__text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні.</p>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#" class="services__button">Всі послуги</a>
-        </div>
-    </section>
-
-        <section class="features">
-        <div class="container">
-                <div class="features__content">
-                    <h2 class="features__title">Високі стандарти розробки</h2>
-                    <p class="features__text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.</p>
-                    <a href="#" class="features__link">Детальніше про компанію</a>
-                </div>
-                <div class="features__image-wrapper">
-                    
-                    <img class="features__image" src="./images/features@1x.jpg" alt="Стандарти розробки">
-                </div>
-            
-            <div class="features __stats">
-                <div class="stat-item">
-                    <div class="stat-item__header">
-                        <svg class="stat-item__icon" viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                        </svg>
-                        <span class="stat-item__number">125</span>
-                    </div>
-                    <span class="stat-item__label">Our projects</span>
-                </div>
-
-                
-                <div class="stat-item">
-                    <div class="stat-item__header">
-                        <svg class="stat-item__icon" viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                        </svg>
-                        <span class="stat-item__number">125</span>
-                    </div>
-                    <span class="stat-item__label">Our projects</span>
-                </div>
-
-                
-                <div class="stat-item">
-                    <div class="stat-item__header">
-                        <svg class="stat-item__icon" viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                        </svg>
-                        <span class="stat-item__number">125</span>
-                    </div>
-                    <span class="stat-item__label">Our projects</span>
-                </div>
-
-                
-                <div class="stat-item">
-                    <div class="stat-item__header">
-                        <svg class="stat-item__icon" viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                        </svg>
-                        <span class="stat-item__number">125</span>
-                    </div>
-                    <span class="stat-item__label">Our projects</span>
-                </div>
-
-                
-                <div class="stat-item">
-                    <div class="stat-item__header">
-                        <svg class="stat-item__icon" viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                        </svg>
-                        <span class="stat-item__number">125</span>
-                    </div>
-                    <span class="stat-item__label">Our projects</span>
-                </div>
-            </div>
-        </div>
-    </section>
-      </section>
-      <section class="works">
-        <div class="container">
-          <div class="works__top">
-            <h2 class="works__title">Наші роботи на яких ми спеціалізуємось</h2>
-
-            <button class="button">Всі послуги</button>
-          </div>
-
-          <div class="works__list">
-            <article class="card">
-              <img class="card__image" src="./images/works@1x.jpg" alt="Робота" />
-
-              <h3 class="card__number">01.</h3>
-
-              <h3 class="card__title">Дослідження і упаковка</h3>
-
-              <p class="card__text">
-                Lorem Ipsum - це текст-"риба", що часто використовується в пресі
-                та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
-                латиниці з початку XVI ст.
-              </p>
-
-              <a href="#" class="card__link"> Детальніше </a>
-            </article>
-
-            <article class="card">
-              <img class="card__image" src="./images/works@1x.jpg" alt="Робота" />
-
-              <h3 class="card__number">01.</h3>
-
-              <h3 class="card__title">Дослідження і упаковка</h3>
-
-              <p class="card__text">
-                Lorem Ipsum - це текст-"риба", що часто використовується в пресі
-                та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
-                латиниці з початку XVI ст.
-              </p>
-
-              <a href="#" class="card__link"> Детальніше </a>
-            </article>
-
-            <article class="card">
-              <img class="card__image" src="./images/works@1x.jpg" alt="Робота" />
-
-              <h3 class="card__number">01.</h3>
-
-              <h3 class="card__title">Дослідження і упаковка</h3>
-
-              <p class="card__text">
-                Lorem Ipsum - це текст-"риба", що часто використовується в пресі
-                та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
-                латиниці з початку XVI ст.
-              </p>
-
-              <a href="#" class="card__link"> Детальніше </a>
-            </article>
-          </div>
+          <a href="#" class="btn"> Наші проекти </a>
         </div>
       </section>
 
-      <section class="projects">
+      <section class="services">
+        <div class="container">
+          <h2 class="services__title">
+            Ми створюємо мобільні додатки для великих корпорацій
+          </h2>
+
+          <p class="services__description">
+            Lorem Ipsum — це текст-"риба", що часто використовується в
+            поліграфії та вебдизайні. Lorem Ipsum є стандартним текстом вже
+            понад 500 років.
+          </p>
+
+          <ul class="services__list">
+            <li class="service">
+              <div class="service__icon">
+                <svg src="./images/services-icon.svg" alt="" />
+              </div>
+
+              <div class="service__content">
+                <h3 class="service__title">Створення сайтів</h3>
+
+                <p class="service__text">
+                  Lorem Ipsum — це текст-"риба", що часто використовується в
+                  поліграфії та вебдизайні.
+                </p>
+              </div>
+            </li>
+
+            <li class="service">
+              <div class="service__icon">
+                <svg src="./images/services-icon.svg" alt="" />
+              </div>
+
+              <div class="service__content">
+                <h3 class="service__title">Створення сайтів</h3>
+
+                <p class="service__text">
+                  Lorem Ipsum — це текст-"риба", що часто використовується в
+                  поліграфії та вебдизайні.
+                </p>
+              </div>
+            </li>
+
+            <li class="service">
+              <div class="service__icon">
+                <svg src="./images/services-icon.svg" alt="" />
+              </div>
+
+              <div class="service__content">
+                <h3 class="service__title">Створення сайтів</h3>
+
+                <p class="service__text">
+                  Lorem Ipsum — це текст-"риба", що часто використовується в
+                  поліграфії та вебдизайні.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn"> Всі послуги </a>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="features__wrapper">
+            <article class="features__content">
+              <h2 class="features__title">Високі стандарти розробки</h2>
+
+              <p class="features__text">
+                Lorem Ipsum — це текст-"риба", що часто використовується в
+                поліграфії та вебдизайні. Lorem Ipsum є стандартом ще з XVI
+                століття.
+              </p>
+
+              <a href="#" class="features__link"> Детальніше про компанію </a>
+            </article>
+
+            <img
+              class="features__image"
+              src="./images/features@1x.jpg"
+              alt="Високі стандарти розробки"
+            />
+          </div>
+
+          <ul class="features__stats">
+            <li class="stat">
+              <div class="stat__top">
+                <svg src="./images/project.svg" alt="" />
+                <span class="stat__number">125</span>
+              </div>
+
+              <p class="stat__text">Our projects</p>
+            </li>
+
+            <li class="stat">
+              <div class="stat__top">
+                <svg src="./images/project.svg" alt="" />
+                <span class="stat__number">125</span>
+              </div>
+
+              <p class="stat__text">Our projects</p>
+            </li>
+
+            <li class="stat">
+              <div class="stat__top">
+                <svg src="./images/project.svg" alt="" />
+                <span class="stat__number">125</span>
+              </div>
+
+              <p class="stat__text">Our projects</p>
+            </li>
+
+            <li class="stat">
+              <div class="stat__top">
+                <svg src="./images/project.svg" alt="" />
+                <span class="stat__number">125</span>
+              </div>
+
+              <p class="stat__text">Our projects</p>
+            </li>
+
+            <li class="stat">
+              <div class="stat__top">
+                <svg src="./images/project.svg" alt="" />
+                <span class="stat__number">125</span>
+              </div>
+
+              <p class="stat__text">Our projects</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="works" id="">
+        <div class="container">
+          <div class="works__header">
+            <h2 class="works__title">
+              Наші роботи, на яких ми спеціалізуємось
+            </h2>
+
+            <a href="#" class="btn"> Всі послуги </a>
+          </div>
+
+          <ul class="works__list">
+            <li class="works__item">
+              <article class="work">
+                <img
+                  class="work__image"
+                  src="./images/works@1x.jpg"
+                  alt="Дослідження і упаковка"
+                />
+
+                <h3 class="work__title">
+                  <span class="work__number">01.</span>
+                  Дослідження і упаковка
+                </h3>
+
+                <p class="work__text">
+                  Lorem Ipsum — це текст-"риба", що часто використовується в
+                  поліграфії та вебдизайні.
+                </p>
+
+                <a href="#" class="work__link"> Детальніше </a>
+              </article>
+            </li>
+
+            <li class="works__item">
+              <article class="work">
+                <img
+                  class="work__image"
+                  src="./images/works@1x.jpg"
+                  alt="Дослідження і упаковка"
+                />
+
+                <h3 class="work__title">
+                  <span class="work__number">02.</span>
+                  Дослідження і упаковка
+                </h3>
+
+                <p class="work__text">
+                  Lorem Ipsum — це текст-"риба", що часто використовується в
+                  поліграфії та вебдизайні.
+                </p>
+
+                <a href="#" class="work__link"> Детальніше </a>
+              </article>
+            </li>
+
+            <li class="works__item">
+              <article class="work">
+                <img
+                  class="work__image"
+                  src="./images/works@1x.jpg"
+                  alt="Дослідження і упаковка"
+                />
+
+                <h3 class="work__title">
+                  <span class="work__number">03.</span>
+                  Дослідження і упаковка
+                </h3>
+
+                <p class="work__text">
+                  Lorem Ipsum — це текст-"риба", що часто використовується в
+                  поліграфії та вебдизайні.
+                </p>
+
+                <a href="#" class="work__link"> Детальніше </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="projects" id="projects">
         <div class="container">
           <h2 class="projects__title">Наші проекти</h2>
 
           <p class="projects__description">
-            Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
-            веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
-            латиниці з початку XVI ст.
+            Lorem Ipsum — це текст-"риба", що часто використовується в
+            поліграфії та вебдизайні.
           </p>
 
           <ul class="projects__list">
-            <li><img
-              class="projects__image"
-              src="./images/projects@1x.jpg"
-              alt="Проект"
-            /></li>
-            <li><img
-              class="projects__image"
-              src="./images/projects@1x.jpg"
-              alt="Проект"
-            /></li>
-            <li><img
-              class="projects__image"
-              src="./images/projects@1x.jpg"
-              alt="Проект"
-            /></li>
-            <li><img
-              class="projects__image"
-              src="./images/projects@1x.jpg"
-              alt="Проект"
-            /></li>
+            <li class="projects__item">
+              <img
+                class="projects__image"
+                src="./images/projects@1x.jpg"
+                alt="Проект 1"
+              />
+            </li>
+
+            <li class="projects__item">
+              <img
+                class="projects__image"
+                src="./images/projects@1x.jpg"
+                alt="Проект 2"
+              />
+            </li>
+
+            <li class="projects__item">
+              <img
+                class="projects__image"
+                src="./images/projects@1x.jpg"
+                alt="Проект 3"
+              />
+            </li>
+
+            <li class="projects__item">
+              <img
+                class="projects__image"
+                src="./images/projects@1x.jpg"
+                alt="Проект 4"
+              />
+            </li>
           </ul>
 
-          <button class="button">Всі проекти</button>
+          <a href="#projects" class="btn"> Всі проекти </a>
         </div>
       </section>
 
       <section class="video">
-        <div class="video__overlay">
+        <div class="container">
           <h2 class="video__title">Відео про нашу роботу</h2>
 
-          <p class="video__text">Просто подивіться,як ми працюємо</p>
+          <p class="video__text">Просто подивіться, як ми працюємо</p>
 
-          <div class="video__box">
-            <img class="video__image" src="./images/video_background@1x.jpg" alt="Відео" />
+          <div class="video__content">
+            <img
+              class="video__image"
+              src="./images/video_background@1x.jpg"
+              alt="Відео про компанію"
+            />
 
-            <button class="video__button">Дивитись відео</button>
+            <btn class="video__btn" type="btn">Дивитися відео</btn>
           </div>
         </div>
       </section>
 
       <section class="subscribe">
         <div class="container">
-          <h2 class="subscribe__title">Підпишись на нашу розсилку</h2>
+          <h2 class="subscribe__title">Підпишіться на нашу розсилку</h2>
 
           <p class="subscribe__text">
-            Корисні статті, акції, новини - отримайте все це зараз!і
+            Корисні статті, акції та новини — отримуйте першими.
           </p>
 
           <form class="subscribe__form">
             <input
               class="subscribe__input"
               type="email"
-              placeholder="Ваш email"
+              placeholder="Ваш E-mail"
+              required
             />
 
-            <button class="btn" type="button">Підписатися</button>
-
-            <p class="subscribe__tip">
-              Ми не шлем спам, і не передаємо нікому ваші дані
-            </p>
+            <btn class="btn" type="submit">Підписатися</btn>
           </form>
+
+          <p class="subscribe__note">
+            Ми не надсилаємо спам і не передаємо ваші дані третім особам.
+          </p>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer__container">
-        <ul>
-            <li class="footer__column">
-          <h3 class="footer__title">Контактна інформація</h3>
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <ul class="footer__columns">
+          <li class="footer__column">
+            <h2 class="footer__title">Контактна інформація</h2>
 
-          <p class="footer__item">test@test.ua</p>
+            <address class="footer__contacts">
+              <a class="footer__link" href="mailto:test@test.ua">
+                test@test.ua
+              </a>
 
-          <p class="footer__item">+380 96 555 66 99</p>
+              <a class="footer__link" href="tel:+380965556699">
+                +380 96 555 66 99
+              </a>
 
-          <p class="footer__item">Тернопіль вул С. Бандери</p>
-        </li>
-
-       <li class="footer__column">
-          <h3 class="footer__title">Останні посилання</h3>
-
-          <a class="footer__link" href="#"> Головна </a>
-
-          <a class="footer__link" href="#"> Наші проекти </a>
-
-          <a class="footer__link" href="#"> Наші послуги </a>
-
-          <a class="footer__link" href="#"> Контакти </a>
+              <p class="footer__text">м. Тернопіль, вул. С. Бандери</p>
+            </address>
           </li>
-        
 
-        <li class="footer__column">
-          <h3 class="footer__title">Наші проекти</h3>
+          <li class="footer__column">
+            <h2 class="footer__title">Основні посилання</h2>
 
-          <a class="footer__link" href="#"> Укрпошта </a>
-
-          <a class="footer__link" href="#"> Нафтогаз </a>
-
-          <a class="footer__link" href="#"> Львівська пивоварня </a>
-
-          <a class="footer__link" href="#"> ТЭЦ Калуша </a>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Головна</a></li>
+              <li><a class="footer__link" href="#">Наші проекти</a></li>
+              <li><a class="footer__link" href="#">Послуги</a></li>
+              <li><a class="footer__link" href="#">Контакти</a></li>
+            </ul>
           </li>
-        
 
-        <li class="footer__column">
-          <h3 class="footer__title">Соціальні мережі</h3>
+          <li class="footer__column">
+            <h2 class="footer__title">Наші проекти</h2>
 
-          <a class="footer__link" href="#"> LinkedIn </a>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Укрпошта</a></li>
+              <li><a class="footer__link" href="#">Нафтогаз</a></li>
+              <li><a class="footer__link" href="#">Львівська пивоварня</a></li>
+              <li><a class="footer__link" href="#">ТЕЦ Калуша</a></li>
+            </ul>
+          </li>
 
-          <a class="footer__link" href="#"> Instagram </a>
+          <li class="footer__column">
+            <h2 class="footer__title">Соціальні мережі</h2>
 
-          <a class="footer__link" href="#"> Facebook </a>
-          
-          <a class="footer__link" href="#"> Twitter </a>        
-        </li>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">LinkedIn</a></li>
+              <li><a class="footer__link" href="#">Instagram</a></li>
+              <li><a class="footer__link" href="#">Facebook</a></li>
+              <li><a class="footer__link" href="#">Twitter</a></li>
+            </ul>
+          </li>
         </ul>
-      </div>
 
-      <p class="footer__copyright">© 2019. Всі права захищені</p>
+        <p class="footer__copyright">© 2019. Всі права захищені.</p>
+      </div>
     </footer>
   </body>
 </html>
