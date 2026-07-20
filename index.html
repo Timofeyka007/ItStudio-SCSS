@@ -6,10 +6,11 @@
     <title>IT Studio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -74,9 +75,9 @@
 
           <ul class="services__list">
             <li class="service">
-              <div class="service__icon">
-                <svg src="./images/services-icon.svg" alt="" />
-              </div>
+              <svg class="service__icon">
+                <use href="./images/services-icon.svg"></use>
+              </svg>
 
               <div class="service__content">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -89,9 +90,9 @@
             </li>
 
             <li class="service">
-              <div class="service__icon">
-                <svg src="./images/services-icon.svg" alt="" />
-              </div>
+              <svg class="service__icon">
+                <use href="./images/services-icon.svg"></use>
+              </svg>
 
               <div class="service__content">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -104,9 +105,9 @@
             </li>
 
             <li class="service">
-              <div class="service__icon">
-                <svg src="./images/services-icon.svg" alt="" />
-              </div>
+              <svg class="service__icon">
+                <use href="./images/services-icon.svg"></use>
+              </svg>
 
               <div class="service__content">
                 <h3 class="service__title">Створення сайтів</h3>
@@ -137,18 +138,25 @@
               <a href="#" class="features__link"> Детальніше про компанію </a>
             </article>
 
+            <div class="thumb">
             <img
               class="features__image"
               src="./images/features@1x.jpg"
+              srcset="        
+              ./images/features@1x.jpg 1x,
+              ./images/features@2x.jpg 2x"
               alt="Високі стандарти розробки"
             />
+            </div>
           </div>
 
           <ul class="features__stats">
             <li class="stat">
               <div class="stat__top">
-                <svg src="./images/project.svg" alt="" />
-                <span class="stat__number">125</span>
+                <svg class="stat__svg">
+                <use href="./images/symbol-defs.svg#icon-project"></use>
+                <svg/>
+                <p class="stat__number">125</p>
               </div>
 
               <p class="stat__text">Our projects</p>
@@ -156,8 +164,10 @@
 
             <li class="stat">
               <div class="stat__top">
-                <svg src="./images/project.svg" alt="" />
-                <span class="stat__number">125</span>
+                <svg class="stat__svg">
+                <use href="./images/symbol-defs.svg#icon-project"></use>
+                <svg/>
+                <p class="stat__number">125</p>
               </div>
 
               <p class="stat__text">Our projects</p>
@@ -165,8 +175,10 @@
 
             <li class="stat">
               <div class="stat__top">
-                <svg src="./images/project.svg" alt="" />
-                <span class="stat__number">125</span>
+                <svg class="stat__svg">
+                <use href="./images/symbol-defs.svg#icon-project"></use>
+                <svg/>
+                <p class="stat__number">125</p>
               </div>
 
               <p class="stat__text">Our projects</p>
@@ -174,8 +186,10 @@
 
             <li class="stat">
               <div class="stat__top">
-                <svg src="./images/project.svg" alt="" />
-                <span class="stat__number">125</span>
+                <svg class="stat__svg">
+                <use href="./images/symbol-defs.svg#icon-project"></use>
+                <svg/>
+                <p class="stat__number">125</p>
               </div>
 
               <p class="stat__text">Our projects</p>
@@ -183,8 +197,10 @@
 
             <li class="stat">
               <div class="stat__top">
-                <svg src="./images/project.svg" alt="" />
-                <span class="stat__number">125</span>
+                <svg class="stat__svg">
+                <use href="./images/symbol-defs.svg#icon-project"></use>
+                <svg/>
+                <p class="stat__number">125</p>
               </div>
 
               <p class="stat__text">Our projects</p>
@@ -193,7 +209,7 @@
         </div>
       </section>
 
-      <section class="works" id="">
+      <section class="works">
         <div class="container">
           <div class="works__header">
             <h2 class="works__title">
@@ -202,13 +218,18 @@
 
             <a href="#" class="btn"> Всі послуги </a>
           </div>
-
+          
           <ul class="works__list">
+            
             <li class="works__item">
+              <div class="works__wrapper">
               <article class="work">
                 <img
                   class="work__image"
                   src="./images/works@1x.jpg"
+                  srcset="
+                  ./images/works@1x.jpg 1x,
+                  ./images/works@2x.jpg 2x"
                   alt="Дослідження і упаковка"
                 />
 
@@ -218,19 +239,26 @@
                 </h3>
 
                 <p class="work__text">
-                  Lorem Ipsum — це текст-"риба", що часто використовується в
-                  поліграфії та вебдизайні.
+                  Lorem Ipsum - це текст-"риба", що часто використовується в
+                  пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для
+                  текстів на латиниці з початку XVI ст.
                 </p>
 
                 <a href="#" class="work__link"> Детальніше </a>
               </article>
+              </div>
             </li>
-
+              
+              
             <li class="works__item">
+              <div class="works__wrapper">
               <article class="work">
                 <img
                   class="work__image"
                   src="./images/works@1x.jpg"
+                  srcset="
+                  ./images/works@1x.jpg 1x,
+                  ./images/works@2x.jpg 2x"
                   alt="Дослідження і упаковка"
                 />
 
@@ -240,19 +268,26 @@
                 </h3>
 
                 <p class="work__text">
-                  Lorem Ipsum — це текст-"риба", що часто використовується в
-                  поліграфії та вебдизайні.
+                  Lorem Ipsum - це текст-"риба", що часто використовується в
+                  пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для
+                  текстів на латиниці з початку XVI ст.
                 </p>
 
                 <a href="#" class="work__link"> Детальніше </a>
               </article>
+              </div>
             </li>
-
+            
+            
             <li class="works__item">
+              <div class="works__wrapper">
               <article class="work">
                 <img
                   class="work__image"
                   src="./images/works@1x.jpg"
+                  srcset="
+                  ./images/works@1x.jpg 1x,
+                  ./images/works@2x.jpg 2x"
                   alt="Дослідження і упаковка"
                 />
 
@@ -262,13 +297,15 @@
                 </h3>
 
                 <p class="work__text">
-                  Lorem Ipsum — це текст-"риба", що часто використовується в
-                  поліграфії та вебдизайні.
+                  Lorem Ipsum - це текст-"риба", що часто використовується в
+                  пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для
+                  текстів на латиниці з початку XVI ст.
                 </p>
 
                 <a href="#" class="work__link"> Детальніше </a>
               </article>
-            </li>
+              </div>
+            </li>           
           </ul>
         </div>
       </section>
@@ -280,12 +317,15 @@
             Lorem Ipsum — це текст-"риба", що часто використовується в
             поліграфії та вебдизайні.
           </p>
-
+            
           <ul class="projects__list">
             <li class="projects__item">
               <img
                 class="projects__image"
                 src="./images/projects@1x.jpg"
+                srcset="
+                ./images/projects@1x.jpg 1x,
+                ./images/projects@2x.jpg 2x"
                 alt="Проект 1"
               />
             </li>
@@ -294,6 +334,9 @@
               <img
                 class="projects__image"
                 src="./images/projects@1x.jpg"
+                srcset="
+                ./images/projects@1x.jpg 1x,
+                ./images/projects@2x.jpg 2x"               
                 alt="Проект 2"
               />
             </li>
@@ -302,6 +345,9 @@
               <img
                 class="projects__image"
                 src="./images/projects@1x.jpg"
+                srcset="
+                ./images/projects@1x.jpg 1x,
+                ./images/projects@2x.jpg 2x"
                 alt="Проект 3"
               />
             </li>
@@ -310,6 +356,9 @@
               <img
                 class="projects__image"
                 src="./images/projects@1x.jpg"
+                srcset="
+                ./images/projects@1x.jpg 1x,
+                ./images/projects@2x.jpg 2x"
                 alt="Проект 4"
               />
             </li>
@@ -329,10 +378,13 @@
             <img
               class="video__image"
               src="./images/video_background@1x.jpg"
+              srcset="
+              ./images/video_background@1x.jpg 1x,
+              ./images/video_background@2x.jpg 2x"
               alt="Відео про компанію"
             />
 
-            <btn class="video__btn" type="btn">Дивитися відео</btn>
+            <button class="video__btn" type="button">Дивитися відео</button>
           </div>
         </div>
       </section>
@@ -353,7 +405,7 @@
               required
             />
 
-            <btn class="btn" type="submit">Підписатися</btn>
+            <button class="btn" type="submit">Підписатися</button>
           </form>
 
           <p class="subscribe__note">
